@@ -1,0 +1,145 @@
+@import 'reset';
+
+$image-proportion: 350px;
+$base-color: #562078;
+$secondary-color: #714e9f;
+$base-font: 1.6em;
+$base-font-height: 1.5em;
+
+html {
+  font-family: "Gotham Black", Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+ background-color: #f5f5f5;
+}
+
+#app-container {
+ font-size: 62.5%;
+ background-color: #fff;
+ padding-right: 24px;
+ padding-left: 24px;
+}
+
+header {
+  max-width: 940px;
+  background: #fff;
+  background: radial-gradient(circle, rgba($secondary-color,1), rgba($base-color,1)) repeat scroll 0% 0% transparent;
+  margin-bottom: 24px;
+  img {
+    margin: 12px 0 24px 24px;
+    width: 230px;
+  }
+}
+
+h1 { 
+  font-size: $base-font*2;
+  line-height: $base-font-height - 0.5;
+  padding-bottom: 12px;
+ }
+
+p {
+  font-size: $base-font;
+  line-height: $base-font-height;
+  padding-bottom: 18px;
+}
+
+a, a:hover, a:visited, a:focus {
+ text-decoration: none;
+ color: #fff;
+}
+
+strong, b { font-weight:bold; }
+
+.story-image {
+  height: $image-proportion;
+  width: $image-proportion;
+  padding: 12px;
+  position: relative;
+  margin: 0 auto;
+
+  p {
+
+    background-color: $base-color;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    opacity: 0.90;
+    position: absolute;
+    bottom: 12px;
+    width: $image-proportion - 25;
+
+  }
+}
+
+#story-image-1 {
+  background: url("../images/story-images.jpg") $image-proportion*0 $image-proportion*0;
+}
+
+#story-image-2 {
+  background: url("../images/story-images.jpg") -$image-proportion $image-proportion*0;
+}
+
+#story-image-3 {
+  background: url("../images/story-images.jpg") -$image-proportion*2 $image-proportion*0;
+}
+
+#story-image-4 {
+  background: url("../images/story-images.jpg") $image-proportion*0 (-$image-proportion);
+}
+
+#story-image-5 {
+  background: url("../images/story-images.jpg") (-$image-proportion) (-$image-proportion);
+}
+
+#story-image-6 {
+  background: url("../images/story-images.jpg") (-$image-proportion*2) (-$image-proportion);
+}
+
+.social-share {
+  width: $image-proportion;
+  margin:0 auto;
+}
+
+.facebook, .twitter {
+  width: $image-proportion/2;
+  height: 50px;
+  text-align: center;
+  font-size: $base-font*4/5;
+  font-weight: bold;
+  color:#fff;
+  padding:17px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.facebook {
+ background-color: darken($base-color,10);
+ float:left;
+}
+
+.twitter {
+ background-color: lighten($base-color,10);
+  float:right;
+}
+
+/* CLEARFIX */
+
+.group:after {
+     content: "";
+     display: table;
+     clear: both;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  header { text-align: center; }
+
+}
