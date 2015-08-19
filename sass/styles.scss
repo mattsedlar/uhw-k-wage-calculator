@@ -56,76 +56,21 @@ a, a:hover, a:visited, a:focus {
 
 strong, b { font-weight:bold; }
 
-.story-image {
-  height: $image-proportion;
-  width: $image-proportion;
-  padding: 12px;
-  position: relative;
-  margin: 0 auto;
-
-  p {
-
-    background-color: $base-color;
-    color: white;
-    font-weight: bold;
-    padding: 12px;
-    opacity: 0.90;
-    position: absolute;
-    bottom: 12px;
-    width: $image-proportion - 25;
-
-  }
-}
-
-#story-image-1 {
-  background: url("../images/story-images.jpg") $image-proportion*0 $image-proportion*0;
-}
-
-#story-image-2 {
-  background: url("../images/story-images.jpg") -$image-proportion $image-proportion*0;
-}
-
-#story-image-3 {
-  background: url("../images/story-images.jpg") -$image-proportion*2 $image-proportion*0;
-}
-
-#story-image-4 {
-  background: url("../images/story-images.jpg") $image-proportion*0 (-$image-proportion);
-}
-
-#story-image-5 {
-  background: url("../images/story-images.jpg") (-$image-proportion) (-$image-proportion);
-}
-
-#story-image-6 {
-  background: url("../images/story-images.jpg") (-$image-proportion*2) (-$image-proportion);
-}
-
-.social-share {
-  width: $image-proportion;
-  margin:0 auto;
-}
-
-.facebook, .twitter {
-  width: $image-proportion/2;
-  height: 50px;
-  text-align: center;
+label {
   font-size: $base-font*4/5;
-  font-weight: bold;
-  color:#fff;
-  padding:17px;
-  cursor: pointer;
+  margin: 6px 0 6px 0;
+}
+
+/* CALCULATE BUTTON */
+
+#calculate { margin: 12px 0 12px 0; }
+
+/* PADDING LOSS RESULTS */
+
+.bg-info {
   margin-bottom: 18px;
-}
 
-.facebook {
- background-color: darken($base-color,10);
- float:left;
-}
-
-.twitter {
- background-color: lighten($base-color,10);
-  float:right;
+  h2 { padding: 12px; }
 }
 
 /* CLEARFIX */

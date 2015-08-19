@@ -35,7 +35,7 @@
         <input name="hours" type="number" id="inputHours" class="form-control" value="40">
     </form>
 
-    <div class="btn btn-lg btn-default">Calculate</div>
+    <div class="btn btn-lg btn-default" id="calculate">Calculate</div>
 
     <!-- END CALCULATOR FORM -->
 
@@ -56,7 +56,30 @@
     <p>Your wage would be <span id="2014"></span>.</p>
     <p>You have lost <span id="l2014"></span>.</p>
 
-    <p>Total Loss to NUHW, 2012-2015: <span id="loverall"></span></p>
+    <div class="bg-info">
+      <h2>Total Loss to NUHW, 2012-2015: $<span id="loverall1"></span></h2>
+    </div>
+
+    <p>SEIU-UHW members just won a new contract! By sticking with NUHW, you will continue to lose the raises enjoyed by SEIU members:</p>
+
+    <h2>October 2015 3% Raise</h2>
+
+    <p>Your wage would be <span id="2015"></span>.</p>
+    <p>You will lose <span id="l2015"></span>.</p>
+
+    <h2>October 2016 3% Raise</h2>
+
+    <p>Your wage would be <span id="2016"></span>.</p>
+    <p>You will lose <span id="l2016"></span>.</p>
+
+    <h2>October 2017 4% Raise</h2>
+
+    <p>Your wage would be <span id="2017"></span>.</p>
+    <p>You will lose <span id="l2017"></span>.</p>
+
+    <div class="bg-info">
+      <h2>Total Loss to NUHW, 2012-2018: $<span id="loverall2"></span></h2>
+    </div>
 
     </main> <!-- container -->
 
