@@ -27,7 +27,7 @@ data = {
 };
 
 var basewage = { wage: $("#inputHourlyWage").val() },
-    avghours = { hours: $("#inputHours").val() };
+    income = { hours: $("#inputHours").val() };
 
 $(document).ready(function() {
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     var l = dues.length;
 
-    // loop through the dues to check for caps
+    // loop through the dues to check for dues caps
 
     for(var i = 0; i < l; i++) {
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
 
 
   plotraises(basewage);
-  plotsalary(avghours);
+  plotsalary(income);
 
 
 });
