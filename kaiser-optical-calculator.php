@@ -24,14 +24,14 @@
 
     <h1>How Much Have YOU Lost With NUHW?</h1>
 
-    <p>Right now, our legislators need to know that their constituents &mdash; <b>and that means our families and our communities</b> &mdash; are talking about Medi-Cal and the millions of real women, children, seniors and people with disabilities who can't get access to the care they need. Share one of the stories below with your community and keep the conversation going.</p>
+    <p>NUHW members at Kaiser Optical haven't received a raise since 2011.  Use the calculator below to see how much you have lost by sticking with NUHW.  The calculations show the annual dollar amount of the 3% raises you would have received under the SEIU-UHW contract:</p>
 
     <!-- CALCULATOR FORM -->
 
     <form id="calculator" role="form" class="form-horizontal">
-      <label class="sr-only" for="hourlywage">Hourly Wage:</label>
+      <label for="hourlywage">Current Hourly Wage:</label>
         <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
-      <label class="sr-only" for="hours">Hours:</label>
+      <label for="hours">Average Hours per Week:</label>
         <input name="hours" type="number" id="inputHours" class="form-control" value="40">
     </form>
 
@@ -44,16 +44,19 @@
     <h2>October 2012 3% Raise</h2>
 
     <p>Your wage would be <span id="2012"></span>.</p>
+    <p>You have lost <span id="l2012"></span>.</p>
 
     <h2>October 2013 3% Raise</h2>
 
     <p>Your wage would be <span id="2013"></span>.</p>
+    <p>You have lost <span id="l2013"></span>.</p>
 
     <h2>October 2014 3% Raise</h2>
 
     <p>Your wage would be <span id="2014"></span>.</p>
+    <p>You have lost <span id="l2014"></span>.</p>
 
-    <p>Total Loss to NUHW, 2012-2015: <span id="overall"></span></p>
+    <p>Total Loss to NUHW, 2012-2015: <span id="loverall"></span></p>
 
     </main> <!-- container -->
 

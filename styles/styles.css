@@ -67,10 +67,15 @@ header {
     margin: 12px 0 24px 24px;
     width: 230px; }
 
-h1 {
-  font-size: 3.2em;
+h1, h2 {
   line-height: 1em;
   padding-bottom: 12px; }
+
+h1 {
+  font-size: 3.2em; }
+
+h2 {
+  font-size: 2.56em; }
 
 p {
   font-size: 1.6em;

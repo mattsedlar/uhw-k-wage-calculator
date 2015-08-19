@@ -33,11 +33,15 @@ header {
   }
 }
 
-h1 { 
-  font-size: $base-font*2;
+h1, h2 {
   line-height: $base-font-height - 0.5;
   padding-bottom: 12px;
  }
+
+h1 { font-size: $base-font*2; }
+
+
+h2 { font-size: $base-font*(2*(4/5)) }
 
 p {
   font-size: $base-font;
