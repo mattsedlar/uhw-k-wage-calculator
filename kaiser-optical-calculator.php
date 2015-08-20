@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="SEIU-UHW" />
     <!-- Styles -->
-    <link data-require="bootstrap-css" data-semver="3.3.1" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
-    <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/styles.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css"/>
 
   </head>
 
@@ -24,70 +23,105 @@
 
     <h1>How Much Have YOU Lost With NUHW?</h1>
 
-    <p>NUHW members at Kaiser Optical haven't received a raise since 2011.  Use the calculator below to see how much you have lost by sticking with NUHW.  The calculations show the annual dollar amount of the 3% raises you would have received under the SEIU-UHW contract:</p>
-
     <!-- CALCULATOR FORM -->
 
-    <form id="calculator" role="form" class="form-horizontal">
-      <label for="hourlywage">Current Hourly Wage:</label>
+    <form id="calculator" role="form" class="form-inline">
+      <div class="form-group">
+        <label for="hourlywage">Current Hourly Wage:</label>
         <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
-      <label for="hours">Average Hours per Week:</label>
+      </div>
+      <div class="form-group">
+        <label for="hours">Average Hours per Week:</label>
         <input name="hours" type="number" id="inputHours" class="form-control" value="40">
+      </div>
     </form>
 
-    <div class="btn btn-lg btn-default" id="calculate">Calculate</div>
+    <div class="btn btn-lg btn-primary" id="calculate">Calculate</div>
 
     <!-- END CALCULATOR FORM -->
 
     <!-- BEGIN RESULTS -->
 
-    <h2>October 2012 3% Raise</h2>
+  <div class="panel panel-default">
 
-    <p>Your wage would be <span id="2012"></span>.</p>
-    <p>You have lost <span id="l2012"></span>.</p>
+    <div class="panel-heading">
+      <h2>What You Have Lost</h2>
+    </div>
 
-    <h2>October 2013 3% Raise</h2>
-
-    <p>Your wage would be <span id="2013"></span>.</p>
-    <p>You have lost <span id="l2013"></span>.</p>
-
-    <h2>October 2014 3% Raise</h2>
-
-    <p>Your wage would be <span id="2014"></span>.</p>
-    <p>You have lost <span id="l2014"></span>.</p>
+    <div class="panel-body">
 
     <div class="bg-info">
       <h2>Total Loss to NUHW, 2012-2015: $<span id="loverall1"></span></h2>
     </div>
 
-    <p>SEIU-UHW members just won a new contract! By sticking with NUHW, you will continue to lose the raises enjoyed by SEIU members:</p>
+    <table class="table table-striped">
+      <tbody>
+        <thead>
+          <tr>
+            <td>Raises</td>
+            <td>Hourly Wage</td>
+            <td>Loss</td>
+          </tr>
+        <tr>
+          <td>October 2012</td>
+          <td id="2012"></td>
+          <td id="l2012"></td>
+        </tr>
+        <tr>
+          <td>October 2013</td>
+          <td id="2013"></td>
+          <td id="l2013"></td>
+        </tr>
+        <tr>
+          <td>October 2014</td>
+          <td id="2014"></td>
+          <td id="l2014"></td>
+        </tr>
+    </table>
+    </div>
 
-    <h2>October 2015 3% Raise</h2>
+    </div> <!-- END PANEL -->
 
-    <p>Your wage would be <span id="2015"></span>.</p>
-    <p>You will lose <span id="l2015"></span>.</p>
-
-    <h2>October 2016 3% Raise</h2>
-
-    <p>Your wage would be <span id="2016"></span>.</p>
-    <p>You will lose <span id="l2016"></span>.</p>
-
-    <h2>October 2017 4% Raise</h2>
-
-    <p>Your wage would be <span id="2017"></span>.</p>
-    <p>You will lose <span id="l2017"></span>.</p>
+    <h2>What You Will Lose</h2>
 
     <div class="bg-info">
       <h2>Total Loss to NUHW, 2012-2018: $<span id="loverall2"></span></h2>
     </div>
 
+    <table class="table table-striped">
+      <tbody>
+        <thead>
+          <tr>
+            <td>Raises</td>
+            <td>Hourly Wage</td>
+            <td>Loss</td>
+          </tr>
+        <tr>
+          <td>October 2015</td>
+          <td id="2015"></td>
+          <td id="l2015"></td>
+        </tr>
+        <tr>
+          <td>October 2016</td>
+          <td id="2016"></td>
+          <td id="l2016"></td>
+        </tr>
+        <tr>
+          <td>October 2017</td>
+          <td id="2017"></td>
+          <td id="l2017"></td>
+        </tr>
+    </table>
+
+
+
     </main> <!-- container -->
 
     <!-- LOADING JAVASCRIPT -->
 
-    <script data-require="jquery" data-semver="2.1.3" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script data-require="bootstrap" data-semver="3.3.2" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/calculate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/calculate.js"></script>
   </body>
 
 </html>
