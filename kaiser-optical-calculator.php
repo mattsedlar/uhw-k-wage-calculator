@@ -25,15 +25,16 @@
 
     <!-- CALCULATOR FORM -->
 
-    <form id="calculator" role="form" class="form-inline">
-      <div class="form-group">
-        <label for="hourlywage">Current Hourly Wage:</label>
-        <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
-      </div>
-      <div class="form-group">
-        <label for="hours">Average Hours per Week:</label>
-        <input name="hours" type="number" id="inputHours" class="form-control" value="40">
-      </div>
+    <form id="calculator" role="form" class="form-inline group">
+
+          <div class="form-group col-xs-6">
+            <label for="hourlywage">Current Hourly Wage:</label>
+            <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
+          </div>
+              <div class="form-group col-xs-6">
+                <label for="hours">Average Hours per Week:</label>
+                <input name="hours" type="number" id="inputHours" class="form-control" value="40">
+              </div>
     </form>
 
     <div class="btn btn-lg btn-primary" id="calculate">Calculate</div>

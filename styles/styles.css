@@ -21,8 +21,8 @@ header {
     width: 230px; }
 
 h1, h2 {
-  line-height: 1em;
-  padding-bottom: 12px; }
+  line-height: 1.35em;
+  padding-bottom: 6px; }
 
 h1 {
   font-size: 3.2em; }
@@ -50,7 +50,8 @@ label {
   padding: 12px; }
 
 input[type=number] {
-  font-size: 1.84em; }
+  font-size: 2em;
+  max-width: 100%; }
 
 /* CALCULATOR STYLES */
 #calculator {
@@ -75,6 +76,9 @@ input[type=number] {
 @media (min-width: 1200px) {
   .container {
     width: 940px; } }
+@media (min-width: 768px) {
+  input[type=number] {
+    max-width: 175px; } }
 @media (max-width: 400px) {
   header {
     text-align: center; }
