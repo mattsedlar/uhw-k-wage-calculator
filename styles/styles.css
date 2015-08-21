@@ -30,9 +30,11 @@ h1 {
 h2 {
   font-size: 2.56em; }
 
-p {
+p, table {
   font-size: 1.6em;
-  line-height: 1.5em;
+  line-height: 1.5em; }
+
+p {
   padding-bottom: 18px; }
 
 a, a:hover, a:visited, a:focus {
@@ -43,12 +45,20 @@ strong, b {
   font-weight: bold; }
 
 label {
-  font-size: 1.28em;
-  margin: 6px 0 6px 0; }
+  font-size: 1.33333em;
+  margin: 6px 0 6px 0;
+  padding: 12px; }
 
-/* CALCULATE BUTTON */
+input[type=number] {
+  font-size: 1.84em; }
+
+/* CALCULATOR STYLES */
+#calculator {
+  text-align: center; }
+
 #calculate {
-  margin: 12px 0 12px 0; }
+  margin: 12px 0 12px 0;
+  display: block; }
 
 /* PADDING LOSS RESULTS */
 .bg-info {

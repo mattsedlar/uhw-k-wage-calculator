@@ -28,6 +28,10 @@ data = {
   raise: 1.04,
   NUHWdues: 0.015,
     UHWdues: 0.02
+  },
+  duescaps: {
+    NUHWuppercap: [94,98,102,106,110,114,118],
+    UHWuppercap: [110,110,110,124,134,144,154]
   }
 
 };
@@ -37,6 +41,18 @@ var basewage = { wage: $("#inputHourlyWage").val() },
 
 $(document).ready(function() {
 
+  // hide panels
+
+  $(".panel-body").css("display","none");
+
+  // adding commas function
+
+  function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+    }
+    return val;
+  }
 
   var plotraises = function(w) {
 
@@ -92,7 +108,7 @@ $(document).ready(function() {
 
     for(var i = 0; i < l; i++) {
 
-      if (dues[i] >= 98) { dues[i] = 98 * 12; }
+      if (dues[i] >= data.duescaps.NUHWuppercap[i]) { dues[i] = data.duescaps.NUHWuppercap[i] * 12; }
 
       else if (dues[i] <= 25) { dues[i] = 25 * 12; }
 
@@ -124,7 +140,7 @@ $(document).ready(function() {
 
     for(var i = 0; i < l; i++) {
 
-      if (dues[i] >= 110) { dues[i] = 110 * 12; }
+      if (dues[i] >= data.duescaps.UHWuppercap[i]) { dues[i] = data.duescaps.UHWuppercap[i] * 12; }
 
       else if (dues[i] <= 32) { dues[i] = 32 * 12; }
 
@@ -166,35 +182,35 @@ $(document).ready(function() {
         l2017 = ((h.s2017 - h.basesalary) - (h.UHW2017 - h.NUHW2017)).toFixed(2);
 
     $("#l2012").html(
-      "$" + l2012
+      "$" + commaSeparateNumber(l2012)
     );
 
     $("#l2013").html(
-      "$" + l2013
+      "$" + commaSeparateNumber(l2013)
     );
 
     $("#l2014").html(
-      "$" + l2014
+      "$" + commaSeparateNumber(l2014)
     );
 
     $("#l2015").html(
-      "$" + l2015
+      "$" + commaSeparateNumber(l2015)
     );
 
     $("#l2016").html(
-      "$" + l2016
+      "$" + commaSeparateNumber(l2016)
     );
 
     $("#l2017").html(
-      "$" + l2017
+      "$" + commaSeparateNumber(l2017)
     );
 
     $("#loverall1").html(
-      (l2012*1) + (l2013*1) + (l2014*1)
+      commaSeparateNumber(Math.round((l2012*1) + (l2013*1) + (l2014*1)))
       );
 
     $("#loverall2").html(
-      (l2012*1) + (l2013*1) + (l2014*1) + (l2015*1) + (l2016*1) + (l2017*1)
+      commaSeparateNumber(Math.round((l2012*1) + (l2013*1) + (l2014*1) + (l2015*1) + (l2016*1) + (l2017*1)))
       );
 
   }
@@ -216,5 +232,11 @@ $(document).ready(function() {
 
   });
 
+
+  // TOGGLE SECTIONS
+
+  $(".panel-heading").click( function() {
+    $(this).next().slideToggle();
+  });
 
 });

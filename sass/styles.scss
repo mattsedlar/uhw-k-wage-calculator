@@ -41,10 +41,13 @@ h1 { font-size: $base-font*2; }
 
 h2 { font-size: $base-font*(2*(4/5)) }
 
-p {
+p, table {
   font-size: $base-font;
   line-height: $base-font-height;
-  padding-bottom: 18px;
+}
+
+p {
+   padding-bottom: 18px;
 }
 
 a, a:hover, a:visited, a:focus {
@@ -55,13 +58,21 @@ a, a:hover, a:visited, a:focus {
 strong, b { font-weight:bold; }
 
 label {
-  font-size: $base-font*4/5;
+  font-size: $base-font*5/6;
   margin: 6px 0 6px 0;
+  padding: 12px;
 }
 
-/* CALCULATE BUTTON */
+input[type=number] { font-size: $base-font*1.15; }
 
-#calculate { margin: 12px 0 12px 0; }
+/* CALCULATOR STYLES */
+
+#calculator { text-align: center; }
+
+#calculate {
+  margin: 12px 0 12px 0;
+  display: block;
+}
 
 /* PADDING LOSS RESULTS */
 

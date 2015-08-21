@@ -45,22 +45,24 @@
   <div class="panel panel-default">
 
     <div class="panel-heading">
-      <h2>What You Have Lost</h2>
+      <h2>What You Have Lost <span class="pull-right">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                             </span></h2>
     </div>
 
     <div class="panel-body">
 
     <div class="bg-info">
-      <h2>Total Loss to NUHW, 2012-2015: $<span id="loverall1"></span></h2>
+      <h2>Total Loss to NUHW, 2012-2015: <mark>$<span id="loverall1"></span></mark></h2>
     </div>
 
     <table class="table table-striped">
       <tbody>
         <thead>
           <tr>
-            <td>Raises</td>
-            <td>Hourly Wage</td>
-            <td>Loss</td>
+            <td><b>Raises</b></td>
+            <td><b>Hourly Wage</b></td>
+            <td><b>Loss</b></td>
           </tr>
         <tr>
           <td>October 2012</td>
@@ -82,19 +84,29 @@
 
     </div> <!-- END PANEL -->
 
-    <h2>What You Will Lose</h2>
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+
+      <h2>What You Will Lose <span class="pull-right">
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                             </span></h2>
+
+    </div>
+
+    <div class="panel-body">
 
     <div class="bg-info">
-      <h2>Total Loss to NUHW, 2012-2018: $<span id="loverall2"></span></h2>
+      <h2>Total Loss to NUHW, 2012-2018: <mark>$<span id="loverall2"></span></mark></h2>
     </div>
 
     <table class="table table-striped">
       <tbody>
         <thead>
           <tr>
-            <td>Raises</td>
-            <td>Hourly Wage</td>
-            <td>Loss</td>
+            <td><b>Raises</b></td>
+            <td><b>Hourly Wage</b></td>
+            <td><b>Loss</b></td>
           </tr>
         <tr>
           <td>October 2015</td>
@@ -113,6 +125,11 @@
         </tr>
     </table>
 
+    </div>
+
+    </div> <!-- END PANEL -->
+
+    <p>NOTE: Numbers provided above are estimates, and do not reflect hourly differentials, overtime, step increases, PSP bonuses or other premium pay.  These estimates do take into account a 2% dues rate (as opposed to NUHW's 1.5% rate) with an annual increase in the maximum monthly dues rate.  A day is based off of an 8 hour shift.</p>
 
 
     </main> <!-- container -->
