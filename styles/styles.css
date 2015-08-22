@@ -13,12 +13,15 @@ body {
 
 header {
   max-width: 940px;
-  background: #fff;
-  background: radial-gradient(circle, #714e9f, #562078) repeat scroll 0% 0% transparent;
-  margin-bottom: 24px; }
-  header img {
-    margin: 12px 0 24px 24px;
-    width: 230px; }
+  background: #fff; }
+  header h1 {
+    color: #562078; }
+
+#subhed {
+  background-color: grey; }
+  #subhed h1 {
+    color: #fff;
+    padding: 6px; }
 
 h1, h2 {
   line-height: 1.35em;
@@ -45,7 +48,7 @@ strong, b {
   font-weight: bold; }
 
 label {
-  font-size: 1.33333em;
+  font-size: 1.4em;
   margin: 6px 0 6px 0;
   padding: 12px; }
 
@@ -65,7 +68,10 @@ input[type=number] {
 .bg-info {
   margin-bottom: 18px; }
   .bg-info h2 {
-    padding: 12px; }
+    padding: 12px 12px 0 12px; }
+  .bg-info p {
+    padding: 0 12px 6px 12px;
+    font-size: 3.6em; }
 
 /* CLEARFIX */
 .group:after {

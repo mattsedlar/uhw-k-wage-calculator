@@ -174,12 +174,12 @@ $(document).ready(function() {
 
     // plotting on document
 
-    var l2012 = ((h.s2012 - h.basesalary) - (h.UHW2012 - h.NUHW2012)).toFixed(2),
-        l2013 = ((h.s2013 - h.basesalary) - (h.UHW2013 - h.NUHW2013)).toFixed(2),
-        l2014 = ((h.s2014 - h.basesalary) - (h.UHW2014 - h.NUHW2014)).toFixed(2),
-        l2015 = ((h.s2015 - h.basesalary) - (h.UHW2015 - h.NUHW2015)).toFixed(2),
-        l2016 = ((h.s2016 - h.basesalary) - (h.UHW2016 - h.NUHW2016)).toFixed(2),
-        l2017 = ((h.s2017 - h.basesalary) - (h.UHW2017 - h.NUHW2017)).toFixed(2);
+    var l2012 = ((h.s2012 - h.basesalary) - (h.UHW2012 - h.NUHW2012)).toFixed(0),
+        l2013 = ((h.s2013 - h.basesalary) - (h.UHW2013 - h.NUHW2013)).toFixed(0),
+        l2014 = ((h.s2014 - h.basesalary) - (h.UHW2014 - h.NUHW2014)).toFixed(0),
+        l2015 = ((h.s2015 - h.basesalary) - (h.UHW2015 - h.NUHW2015)).toFixed(0),
+        l2016 = ((h.s2016 - h.basesalary) - (h.UHW2016 - h.NUHW2016)).toFixed(0),
+        l2017 = ((h.s2017 - h.basesalary) - (h.UHW2017 - h.NUHW2017)).toFixed(0);
 
     $("#l2012").html(
       "$" + commaSeparateNumber(l2012)
@@ -229,6 +229,8 @@ $(document).ready(function() {
 
     plotraises(basewage);
     plotsalary(income);
+
+    $("#lost").slideToggle();
 
   });
 

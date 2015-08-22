@@ -18,21 +18,23 @@
     <main class="container" id="app-container">
 
     <header>
-      <img src="http://go.seiu-uhw.org/l/45502/2014-12-02/2byct/45502/28054/SEIU_UHW_Logo_4C_noBG.png" alt="SEIU-UHW"/>
+      <h1>SEIU-United Healthcare Workers West</h2>
     </header>
 
-    <h1>How Much Have YOU Lost With NUHW?</h1>
+    <div id="subhed">
+      <h1>How Much Have YOU Lost With NUHW?</h1>
+    </div>
 
     <!-- CALCULATOR FORM -->
 
     <form id="calculator" role="form" class="form-inline group">
 
           <div class="form-group col-xs-6">
-            <label for="hourlywage">Current Hourly Wage:</label>
+            <label for="hourlywage">Hourly<br/>Wage</label>
             <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
           </div>
               <div class="form-group col-xs-6">
-                <label for="hours">Average Hours per Week:</label>
+                <label for="hours">Hours per Week</label>
                 <input name="hours" type="number" id="inputHours" class="form-control" value="40">
               </div>
     </form>
@@ -51,17 +53,18 @@
                              </span></h2>
     </div>
 
-    <div class="panel-body">
+    <div class="panel-body" id="lost">
 
     <div class="bg-info">
-      <h2>Total Loss to NUHW, 2012-2015: <mark>$<span id="loverall1"></span></mark></h2>
+      <h2>Total Loss, 2012-2015:</h2>
+      <p>$<span id="loverall1"></span></p>
     </div>
 
     <table class="table table-striped">
       <tbody>
         <thead>
           <tr>
-            <td><b>Raises</b></td>
+            <td><b>Annual Raise</b></td>
             <td><b>Hourly Wage</b></td>
             <td><b>Loss</b></td>
           </tr>
@@ -98,14 +101,15 @@
     <div class="panel-body">
 
     <div class="bg-info">
-      <h2>Total Loss to NUHW, 2012-2018: <mark>$<span id="loverall2"></span></mark></h2>
+      <h2>Total Loss, 2012-2018:</h2>
+      <p>$<span id="loverall2"></span></p>
     </div>
 
     <table class="table table-striped">
       <tbody>
         <thead>
           <tr>
-            <td><b>Raises</b></td>
+            <td><b>Annual Raise</b></td>
             <td><b>Hourly Wage</b></td>
             <td><b>Loss</b></td>
           </tr>

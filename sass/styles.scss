@@ -23,12 +23,14 @@ body {
 header {
   max-width: 940px;
   background: #fff;
-  background: radial-gradient(circle, rgba($secondary-color,1), rgba($base-color,1)) repeat scroll 0% 0% transparent;
-  margin-bottom: 24px;
-  img {
-    margin: 12px 0 24px 24px;
-    width: 230px;
-  }
+  h1 { color: $base-color; }
+}
+
+#subhed {
+  background-color: grey;
+
+  h1 { color: #fff;
+    padding: 6px;}
 }
 
 h1, h2 {
@@ -58,7 +60,7 @@ a, a:hover, a:visited, a:focus {
 strong, b { font-weight:bold; }
 
 label {
-  font-size: $base-font*5/6;
+  font-size: $base-font*7/8;
   margin: 6px 0 6px 0;
   padding: 12px;
 }
@@ -82,8 +84,14 @@ input[type=number] {
 .bg-info {
   margin-bottom: 18px;
 
-  h2 { padding: 12px; }
+  h2 { padding: 12px 12px 0 12px; }
+  p {
+    padding: 0 12px 6px 12px;
+    font-size: 3.6em;
+  }
 }
+
+#loverall1, #loverall2 {}
 
 /* CLEARFIX */
 
