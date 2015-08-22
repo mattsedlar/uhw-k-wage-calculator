@@ -18,11 +18,11 @@
     <main class="container" id="app-container">
 
     <header>
-      <h1>SEIU-United Healthcare Workers West</h2>
+      <h1>SEIU-UHW</h2>
     </header>
 
     <div id="subhed">
-      <h1>How Much Have YOU Lost With NUHW?</h1>
+      <h1>How Much Have YOU Lost With <span style="color:red">NUHW</span>?</h1>
     </div>
 
     <!-- CALCULATOR FORM -->
@@ -34,7 +34,7 @@
             <input name="hourlywage" type="number" id="inputHourlyWage" class="form-control" value="25.00">
           </div>
               <div class="form-group col-xs-6">
-                <label for="hours">Hours per Week</label>
+                <label for="hours">Hours<br/>per Week</label>
                 <input name="hours" type="number" id="inputHours" class="form-control" value="40">
               </div>
     </form>

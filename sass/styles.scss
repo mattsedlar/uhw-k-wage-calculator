@@ -27,21 +27,23 @@ header {
 }
 
 #subhed {
-  background-color: grey;
-
-  h1 { color: #fff;
-    padding: 6px;}
+  background-color: darkgray;
+  h1 {
+    color: #fff;
+    padding: 12px 0 12px 12px;
+  }
 }
 
 h1, h2 {
   line-height: $base-font-height - 0.15;
   padding-bottom: 6px;
+  margin: 12px 0 12px 0;
  }
 
 h1 { font-size: $base-font*2; }
 
 
-h2 { font-size: $base-font*(2*(4/5)) }
+h2 { font-size: $base-font*(2*(3/4)) }
 
 p, table {
   font-size: $base-font;
