@@ -95,7 +95,8 @@ $(document).ready(function() {
 
   var NUHWdues = function(h) {
 
-    dues = [(h.s2012 * data.y2012.NUHWdues)/12,
+    dues = [(h.basesalary * data.y2012.NUHWdues)/12,
+            (h.s2012 * data.y2012.NUHWdues)/12,
             (h.s2013 * data.y2013.NUHWdues)/12,
             (h.s2014 * data.y2014.NUHWdues)/12,
             (h.s2015 * data.y2015.NUHWdues)/12,
@@ -126,7 +127,8 @@ $(document).ready(function() {
 
   var UHWdues = function(h) {
 
-    dues = [(h.s2012 * data.y2012.UHWdues)/12,
+    dues = [(h.basesalary * data.y2012.NUHWdues)/12,
+            (h.s2012 * data.y2012.UHWdues)/12,
             (h.s2013 * data.y2013.UHWdues)/12,
             (h.s2014 * data.y2014.UHWdues)/12,
             (h.s2015 * data.y2015.UHWdues)/12,
