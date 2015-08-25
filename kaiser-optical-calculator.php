@@ -56,7 +56,7 @@
     <div class="panel-body" id="lost">
 
     <div class="bg-info">
-      <h2>Total Loss, 2012-2015:</h2>
+      <h2>Total Loss,<br/> 2012-2015:</h2>
       <p>$<span id="loverall1"></span></p>
     </div>
 
@@ -65,7 +65,7 @@
         <thead>
           <tr>
             <td><b>Annual Raise</b></td>
-            <td><b>Hourly Wage</b></td>
+            <td><b>Wage would be</b></td>
             <td><b>Loss</b></td>
           </tr>
         <tr>
@@ -101,7 +101,7 @@
     <div class="panel-body">
 
     <div class="bg-info">
-      <h2>Total Loss, 2012-2018:</h2>
+      <h2>Total Loss,<br/> 2012-2018:</h2>
       <p>$<span id="loverall2"></span></p>
     </div>
 
@@ -110,7 +110,7 @@
         <thead>
           <tr>
             <td><b>Annual Raise</b></td>
-            <td><b>Hourly Wage</b></td>
+            <td><b>Wage would be</b></td>
             <td><b>Loss</b></td>
           </tr>
         <tr>
@@ -134,7 +134,7 @@
 
     </div> <!-- END PANEL -->
 
-    <p>NOTE: Numbers provided above are estimates, and do not reflect hourly differentials, overtime, step increases, PSP bonuses or other premium pay.  These estimates do take into account a 2% dues rate (as opposed to NUHW's 1.5% rate) with an annual increase in the maximum monthly dues rate.  A day is based off of an 8 hour shift.</p>
+    <p>NOTE: Numbers provided above are estimates for Kaiser Optical workers only, and do not reflect hourly differentials, overtime, step increases, PSP bonuses or other premium pay.  These estimates do take into account a 2% dues rate (as opposed to NUHW's 1.5% rate) with an annual increase in the maximum monthly dues rate.  A day is based off of an 8 hour shift.</p>
 
 
     </main> <!-- container -->

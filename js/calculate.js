@@ -116,12 +116,12 @@ $(document).ready(function() {
 
     }
 
-    h.NUHW2012 = dues[0];
-    h.NUHW2013 = dues[1];
-    h.NUHW2014 = dues[2];
-    h.NUHW2015 = dues[3];
-    h.NUHW2016 = dues[4];
-    h.NUHW2017 = dues[5];
+    h.NUHW2012 = dues[1];
+    h.NUHW2013 = dues[2];
+    h.NUHW2014 = dues[3];
+    h.NUHW2015 = dues[4];
+    h.NUHW2016 = dues[5];
+    h.NUHW2017 = dues[6];
   }
 
   var UHWdues = function(h) {
@@ -148,12 +148,12 @@ $(document).ready(function() {
 
     }
 
-    h.UHW2012 = dues[0];
-    h.UHW2013 = dues[1];
-    h.UHW2014 = dues[2];
-    h.UHW2015 = dues[3];
-    h.UHW2016 = dues[4];
-    h.UHW2017 = dues[5];
+    h.UHW2012 = dues[1];
+    h.UHW2013 = dues[2];
+    h.UHW2014 = dues[3];
+    h.UHW2015 = dues[4];
+    h.UHW2016 = dues[5];
+    h.UHW2017 = dues[6];
 
   }
 
@@ -230,7 +230,7 @@ $(document).ready(function() {
     plotraises(basewage);
     plotsalary(income);
 
-    $("#lost").slideToggle();
+    $("#lost").slideDown();
 
   });
 
