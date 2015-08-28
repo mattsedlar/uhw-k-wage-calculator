@@ -1,0 +1,6 @@
+CACHE MANIFEST
+/styles/styles.css
+/js/calculate.js
+
+FALLBACK
+/html/ /offline.html
